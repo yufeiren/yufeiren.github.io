@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+  <title>Yufei Ren</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54287672-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <style type="text/css">
+    body {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 12px;
+      color: #222222;
+      margin: 20px 10px 0px 20px;
+      text-align: left;
+    }
+    .manheader {
+      font-family: monospace;
+      font-size: 14px;
+      margin: 10px 0px 0px 0px;
+    }
+    h1 {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 15px 0px 0px 0px;
+    }
+    .subtext {
+      margin: 0px 0px 10px 50px;
+      width: 575px;
+    }
+    .doublesubtext {
+      margin: 0px 0px 10px 70px;
+      width: 525px;
+    }
+    .triplesubtext {
+      margin: 0px 0px 10px 90px;
+      width: 475px;
+    }
+    .bottomcut {
+      margin-bottom: 0px;
+    }
+    a, a.active, a.visited, a.hover {
+      color: #222222;
+      text-decoration: underline;
+    }
+    .footer {
+      margin: 10px 0px 20px 0px;
+      color: #CCCCCC;
+    }
+    .linkfloater {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 5px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="linkfloater">
+  <span style="font-weight: bold;">More About Me</span><hr>
+  <a href="http://www.linkedin.com/in/yufeiren">
+    <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Yufei Ren's profile on LinkedIn">
+  </a><br>
+  My <a href="./dl/resume-yufei-ren.pdf">curriculum vitae</a><br>
+</div>
+
+<pre class="manheader">
+Yufei Ren<br>
+</pre>
+
+<p>Email: yufei.ren at stonybrook.edu<br></p>
+<p>Office 365 CEWIT building<br>
+1500 Stony Brook Rd, Stony Brook, NY 11794-6040<br></p>
+
+<h1>About Me</h1>
+<p class="subtext">
+  I am a PhD student at the Department of Electrical and Computer
+Engineering at Stony Brook University working with
+Professor <a href="http://www.ece.sunysb.edu/~dtyu/">Dantong Yu</a>. I
+am interested in high performance networks and storage
+systems. Precisely, I am working on an RDMA-based FTP data transfer
+software - <a href="http://ftp100.cewit.stonybrook.edu/rftp/">RFTP</a>
+and a NUMA-aware Cache for Linux SCSI Target Framework with iSCSI/iSER
+drivers.<br>
+<br>
+  Before came to Stony Brook, I worked as a senior software engineer
+for an online transaction processing system
+in <a href="http://en.unionpay.com/">China UnionPay</a> for three
+years, and as a software tester (intern)
+in <a href="http://www.samsung.com/us/aboutsamsung/ourbusinesses/researchdevelopment.html">Samsung
+Electronics (China) R&D Center</a> for 11 months.  I received the
+B.S. degree from <a href="http://www.whu.edu.cn/">Wuhan
+University</a>, China, in 2005 and the M.E. degree
+from <a href="http://www.nju.edu.cn/">Nanjing University</a>, China,
+in 2007, both in Software Engineering.
+</p>
+
+<h1>Software</h1>
+<p class="subtext">
+  <b><a href="http://ftp100.cewit.stonybrook.edu/rftp/">RFTP</a></b>:
+  RDMA-based FTP Service<br>
+</p>
+<p class="doublesubtext">
+RFTP is an RDMA-based data transfer software for high performance
+networks, such as InfiniBand, RoCE, and iWARP. In the meantime, Linux
+TCP zero-copy interfaces, sendfile and splice, are also integrated
+into RFTP to accommodate network environments without RDMA
+supports. It also integrates an asynchronous I/O module for efficient
+disk access.  The software architecture of RFTP is a combination of
+event-driven and multi-threaded programming model to maximize network
+and disk bandwidth utilization and minimize CPU utilization.<br>
+</p>
+<br>
+<p class="subtext">
+  <b><a href="http://ftp100.cewit.stonybrook.edu/rperf/">rperf</a></b>:
+  Benchmark RDMA Network Performance
+  as <a href="http://iperf.sourceforge.net/">iperf</a><br>
+</p>
+<p class="doublesubtext">
+rperf is an RDMA compatible version of iperf. It takes advantage of
+original iperf software architecture, and adds several RDMA extentions
+into iperf. rperf features several parameters to achieve the best
+performance of RDMA hardware.<br>
+</p>
+<br>
+<p class="subtext">
+  <b>Open Source Contributions</b><br>
+</p>
+<p class="doublesubtext">
+  I <a href="https://git.kernel.org/cgit/linux/kernel/git/axboe/fio.git/log/?qt=author&q=yufei">contributed</a>
+  an RDMA I/O engine and a NUMA binding module
+  for <a href="http://freecode.com/projects/fio">FIO</a> - Flexible
+  I/O Tester.<br>
+</p>
+
+<h1>Publications</h1>
+<p class="subtext">
+<a href="http://doi.ieeecomputersociety.org/10.1109/TPDS.2014.2311817">Design,
+Implementation, and Evaluation of a NUMA-Aware Cache for iSCSI Storage
+Servers</a><br>
+<b>Yufei Ren</b>, Tan Li, Dantong Yu, Shudong Jin, Thomas Robertazzi<br>
+<i>IEEE Transactions on Parallel and Distributed Systems
+  (TPDS),</i> Preprint<br>
+<br>
+<a href="http://dl.acm.org/citation.cfm?id=2503260">Design and
+ Performance Evaluation of NUMA-Aware RDMA-Based End-to-End Data
+ Transfer Systems</a><br>
+<b>Yufei Ren</b>, Tan Li, Dantong Yu, Shudong Jin, Thomas Robertazzi<br>
+<i>Proceedings of the International Conference on High Performance
+  Computing, Networking, Storage and Analysis</i> <b>SC'13</b>,
+  Denver, Colorado, November 2013.<br>  (AR: 92/457 = 20%)<br>
+  [<a href="./dl/SC2013-numa-aware-rdma-based-end-to-end-data-transfer-systems.pdf">pdf</a>]
+  [<a href="./dl/SC13-end-to-end-data-transfer.pptx">slides</a>]<br>
+<br>
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6687370">Characterization of Input/Output Bandwidth Performance Models in NUMA
+Architecture for Data Intensive Applications</a><br>
+Tan Li, <b>Yufei Ren</b>, Dantong Yu, Shudong Jin, Thomas Robertazzi<br>
+<i>Proceedings of the International Conference on Parallel Processing</i> <b>ICPP '13</b>, Lyon, France, October 2013.<br>
+<br>
+<a href="http://www.sciencedirect.com/science/article/pii/S0164121213000277">Design
+  and Testbed Evaluation of RDMA-Based Middleware for High-Performance
+  Data Transfer Applications</a><br>
+<b>Yufei Ren</b>, Tan Li, Dantong Yu, Shudong Jin, Thomas Robertazzi<br>
+<i>Journal of Systems and Software, Volume 86, Issue 7, July 2013,
+  Pages 1850-1863, ISSN 0164-1212, 10.1016/j.jss.2013.01.070.</i><br>
+<br>
+<a href="http://dl.acm.org/citation.cfm?id=2389043">Protocols for Wide-Area Data-Intensive Applications: Design and Performance Issues</a><br>
+<b>Yufei Ren</b>, Tan Li, Dantong Yu, Shudong Jin, Thomas Robertazzi,
+Brian L. Tierney, Eric Pouyoul<br>
+<i>Proceedings of the International Conference on High Performance
+  Computing, Networking, Storage and Analysis</i> <b>SC'12</b>, Salt
+  Lake City, Utah, November 2012.<br>  (AR: 100/472 = 21%)<br>
+  [<a href="./dl/SC2012-protocols-for-wide-area-data-intensive-applications.pdf">pdf</a>]
+  [<a href="./dl/SC2012-protocols-for-wide-ware-data-intensive-applications-final.pptx">slides</a>]<br>
+<br>
+<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=6270759">Middleware
+  Support for RDMA-Based Data Transfer in Cloud Computing</a><br>
+<b>Yufei Ren</b>, Tan Li, Dantong Yu, Shudong Jin, Thomas Robertazzi<br>
+<i>Proceedings of the High-Performance Grid and Cloud Computing
+  Workshop</i> (held in conjunction with IPDPS 2012), Shanghai, China,
+  May 2012.<br>
+  [<a href="./dl/HPGC2012-workshop-middle-support-for-rdma-based-data-transfer-in-cloud-computing.pdf">pdf</a>]
+  [<a href="./dl/HPGC2012-Middleware-Support-for-RDMA-based-Data-Transfer-in-Cloud-Computing.pptx">slides</a>]<br>
+</p>
+
+<h1>Poster</h1>
+<p class="subtext">
+<a href="http://sc13.supercomputing.org/schedule/event_detail.php?evid=ers112">End-to-End
+Data Transfer Systems for 100 Gbps Networks and Beyond</a><br>
+<i>Doctoral Showcase in the International Conference on High
+  Performance Computing, Networking, Storage and
+  Analysis</i> <b>SC'13</b>, Denver, Colorado, November 2013.<br>
+  [<a href="./dl/SC13-early-research-showcase-poster-yufei.pdf">pdf</a>]<br>
+</p>
+
